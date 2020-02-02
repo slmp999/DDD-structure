@@ -1,0 +1,26 @@
+package order
+
+type Repository interface {
+	CartAddRepo(req *Basket) (interface{}, error)
+	CartAddRepoV2(UserID string, ItemID int64, Qty int64) (interface{}, error)
+	CartDeleteRepo(UserID string) (interface{}, error)
+	CartStorageRepo(UserID string) ([]Basket, error)
+	CartDeleteByItemRepo(ItemID int64, UserID string) (interface{}, error)
+	CartQTYRepo(ItemID int64, QTY int64, UserID string) (interface{}, error)
+	CartToOrderRepo(UserID string, ItemID []int64, DiscountAmount float64, DeliveryCode string, DistanceAmount int64, Coupon string) (interface{}, error)
+	OrderAllRepo(UserID string) ([]Order, error)
+	OrderCancelRepo(UserID string, ID int64) (interface{}, error)
+	OrderByIDRepo(ID int64) ([]Order, error)
+	OrderConfirmRepo(UserID string, ID int64, URL string, AddressID int64) (resp string, Fname string, Lname string, OrAmount float64, DocNo string, err error)
+	BankRepo() ([]Bank, error)
+	BankList() ([]BankList, error)
+	UpdateStatusRepo(UserID string, ID int64, Status int64, TrackingID string) (interface{}, error)
+	CallTokenLine(ID int64) (token string, err error)
+	DeliveryPriceRepo(UserID string, ItemID []int64, Code string) (name string, resp float64, err error)
+	DeliveryAllRepo() ([]DeliveryAll, error)
+	OrderListAllRepo(OrderStatus int64) ([]Order, error)
+	OrderListSendAllRepo() ([]OrderSend, error)
+	OrderSendDetailRepo(ID int64) ([]OrderSendDetail, error)
+	OrderPackageRepo(UserID string, ItemID int64) (interface{}, error)
+	StatusOrder(DocNo string) (interface{}, error)
+}

@@ -1,0 +1,17 @@
+{
+    "SELECT \r\n\tifnull(id,0) as id,\r\n\tifnull(doc_date,'') as doc_date,\r\n\tifnull(coupon_no,'') as coupon_no,\r\n\tifnull(coupon_type,0) as coupon_type,\r\n\tifnull(user_id,'') as user_id,\r\n\tifnull(name,'') as name,\r\n\tifnull(value,0) as value,\r\n\tifnull(remain,0) as remain,\r\n\tifnull(expire_status,0) as expire_status,\r\n\tifnull(begin_date,'') as begin_date,\r\n\tifnull(expire_date,'') as expire_date\r\n\tfrom coupon": [
+        {
+            "id" : 1,
+            "doc_date" : "",
+            "coupon_no" : "COUPON-621007-0001",
+            "coupon_type" : 2,
+            "user_id" : "62100700002",
+            "name" : "",
+            "value" : 15.0,
+            "remain" : 15.0,
+            "expire_status" : 1,
+            "begin_date" : "2019-10-07",
+            "expire_date" : "2020-10-07"
+        }
+    ]}
+    

@@ -1,0 +1,68 @@
+{
+    "authen":{
+        "id":1,
+        "username": "admin",
+        "password": "123456",
+        "token": "2f570ceb279847a19fd570b9a6208850",
+        "fname": "admin",
+        "lname": "administrator",
+        "phone_1":"+66974520603",
+        "phone_2":"+66974520602",
+        "email": "test@gmail.com",
+        "address_1":"123213",
+        "address_2":"12312312",
+        "zipcode":50140,
+        "city":"เชียงใหม่",
+        "country":"thailand",
+        "gender":"ชาย",
+        "role_id": "1",
+        "role_name": "Administrator"
+    }
+}
+
+{
+    "message-count": "1",
+    "messages": [{
+        "to": "66979679089",
+        "message-id": "1C00000010725FB3",
+        "status": "0",
+        "remaining-balance": "1.95400000",
+        "message-price": "0.02300000",
+        "network": "52001"
+    }]
+}
+
+
+
+{
+    "user": [
+        {
+            "id" : 1,
+            "company_id" : 0,
+            "role_id" : 0,
+            "user_id" : "62082400001",
+            "user_name" : null,
+            "eng_name" : null,
+            "active_status" : 1,
+            "telephone" : "+66816398388",
+            "email" : null,
+            "ref_code" : "a9bd2cu6jueAUgjdasie",
+            "access_token" : null
+        }
+    ]}
+    
+
+
+    {
+        "select \r\n\t\tifnull(name,'') as name,\r\n\t\tifnull(addr_phone,'') as addr_phone,\r\n\t\tifnull(addr_state,'') as addr_state,\r\n\t\tifnull(addr_district,'') as addr_district,\r\n\t\tifnull(addr_province,'') as addr_province,\r\n\t\tifnull(addr_postal_code,'') as addr_postal_code,\r\n\t\tifnull(main_address,0) as main_address from user_address ": [
+            {
+                "name" : "",
+                "addr_phone" : "",
+                "addr_state" : "",
+                "addr_district" : "",
+                "addr_province" : "",
+                "addr_postal_code" : "1",
+                "main_address" : 0
+            }
+        ]}
+        
